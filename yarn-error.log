@@ -1,5 +1,5 @@
 Arguments: 
-  /home/marcos/.nvm/versions/node/v14.17.4/bin/node /home/marcos/.nvm/versions/node/v14.17.4/bin/yarn add bcyiptjs
+  /home/marcos/.nvm/versions/node/v14.17.4/bin/node /home/marcos/.nvm/versions/node/v14.17.4/bin/yarn add @types/sjonwebtoken -D
 
 PATH: 
   /home/marcos/.local/bin:/home/marcos/.nvm/versions/node/v14.17.4/bin:/home/marcos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bcyiptjs: Not found
+  Error: https://registry.yarnpkg.com/@types%2fsjonwebtoken: Not found
       at Request.params.callback [as _callback] (/home/marcos/.nvm/versions/node/v14.17.4/lib/node_modules/yarn/lib/cli.js:66992:18)
       at Request.self.callback (/home/marcos/.nvm/versions/node/v14.17.4/lib/node_modules/yarn/lib/cli.js:140763:22)
       at Request.emit (events.js:400:28)
@@ -39,6 +39,7 @@ npm manifest:
       "dependencies": {
           "@types/express": "^4.17.13",
           "@types/jsonwebtoken": "^8.5.5",
+          "bcryptjs": "^2.4.3",
           "dotenv": "^10.0.0",
           "express": "^4.17.1",
           "express-async-errors": "^3.1.1",
@@ -51,6 +52,7 @@ npm manifest:
           "uuid": "^8.3.2"
       },
       "devDependencies": {
+          "@types/bcryptjs": "^2.4.2",
           "@types/uuid": "^8.3.1"
       }
   }
@@ -67,6 +69,11 @@ Lockfile:
     version "1.2.3"
     resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
     integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
+  
+  "@types/bcryptjs@^2.4.2":
+    version "2.4.2"
+    resolved "https://registry.yarnpkg.com/@types/bcryptjs/-/bcryptjs-2.4.2.tgz#e3530eac9dd136bfdfb0e43df2c4c5ce1f77dfae"
+    integrity sha512-LiMQ6EOPob/4yUL66SZzu6Yh77cbzJFYll+ZfaPiPPFswtIlA/Fs1MzdKYA7JApHU49zQTbJGX3PDmCpIdDBRQ==
   
   "@types/body-parser@*":
     version "1.19.1"
@@ -291,6 +298,11 @@ Lockfile:
     integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
     dependencies:
       tweetnacl "^0.14.3"
+  
+  bcryptjs@^2.4.3:
+    version "2.4.3"
+    resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
+    integrity sha1-mrVie5PmBiH/fNrF2pczAn3x0Ms=
   
   binary-extensions@^2.0.0:
     version "2.2.0"

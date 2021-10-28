@@ -12,6 +12,10 @@ export class CreateCompliments1635186794160 implements MigrationInterface {
                     isPrimary: true
                 },
                 {
+                    name: "tag_id",
+                    type: "uuid"
+                },
+                {
                     name: "user_sender",
                     type: "uuid"
                 },
@@ -20,9 +24,6 @@ export class CreateCompliments1635186794160 implements MigrationInterface {
                     type: "uuid"
                 },
                 {
-                    name: "tag_id",
-                    type: "uuid"
-                }, {
                     name: "message",
                     type: "varchar"
                 }, {

@@ -12,15 +12,15 @@ export class CreateCompliments1635186794160 implements MigrationInterface {
                     isPrimary: true
                 },
                 {
-                    name: "tag_id",
-                    type: "uuid"
-                },
-                {
                     name: "user_sender",
                     type: "uuid"
                 },
                 {
                     name: "user_receiver",
+                    type: "uuid"
+                },
+                {
+                    name: "tag_id",
                     type: "uuid"
                 },
                 {
@@ -30,11 +30,7 @@ export class CreateCompliments1635186794160 implements MigrationInterface {
                     name: "created_at",
                     type: "timestamp",
                     default: "now()"
-                }, {
-                    name: "updated_at",
-                    type: "timestamp",
-                    default: "now()"
-                }
+                },
             ],
             foreignKeys: [
                 {

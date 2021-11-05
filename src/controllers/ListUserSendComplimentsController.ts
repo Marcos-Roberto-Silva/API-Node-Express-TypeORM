@@ -1,0 +1,5 @@
+class ListUserSendComplimentsController {
+    
+}
+
+export { ListUserSendComplimentsController }
